@@ -1,0 +1,327 @@
+/* =====================================================
+   CONFIGURAÇÕES GERAIS
+   ===================================================== */
+
+/* O seletor * aplica estas regras a todos os elementos */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo da página */
+body {
+    /* Define uma fonte simples e fácil de ler */
+    font-family: Arial, sans-serif;
+
+    /* Cor do texto */
+    color: #222222;
+
+    /* Cor de fundo */
+    background-color: #f5f5f5;
+
+    /* Remove uma margem padrão do navegador */
+    margin: 0;
+
+    /* Espaçamento entre as linhas */
+    line-height: 1.6;
+
+    /* Tamanho inicial da fonte */
+    font-size: 18px;
+}
+
+
+/* =====================================================
+   CABEÇALHO
+   ===================================================== */
+
+header {
+    /* Cor de fundo do cabeçalho */
+    background-color: #176b3a;
+
+    /* Cor dos textos */
+    color: white;
+
+    /* Espaçamento interno */
+    padding: 30px;
+
+    /* Centraliza o texto */
+    text-align: center;
+}
+
+/* Título principal */
+header h1 {
+    margin-top: 0;
+}
+
+
+/* =====================================================
+   ÁREA DE ACESSIBILIDADE
+   ===================================================== */
+
+.acessibilidade {
+    background-color: #ffffff;
+
+    padding: 20px;
+
+    /* Centraliza a área */
+    text-align: center;
+
+    border-bottom: 2px solid #dddddd;
+}
+
+.acessibilidade h2 {
+    margin-top: 0;
+}
+
+
+/* Container dos botões */
+.botoes-acessibilidade {
+
+    /* Ativa o Flexbox */
+    display: flex;
+
+    /* Permite que os botões quebrem linha em telas pequenas */
+    flex-wrap: wrap;
+
+    /* Centraliza os botões */
+    justify-content: center;
+
+    /* Espaço entre os botões */
+    gap: 10px;
+}
+
+
+/* Estilo dos botões */
+button {
+
+    /* Tamanho da fonte */
+    font-size: 16px;
+
+    /* Espaçamento interno */
+    padding: 10px 15px;
+
+    /* Borda */
+    border: 2px solid #176b3a;
+
+    /* Cor de fundo */
+    background-color: white;
+
+    /* Cor do texto */
+    color: #176b3a;
+
+    /* Deixa os cantos arredondados */
+    border-radius: 6px;
+
+    /* Mostra que o elemento pode ser clicado */
+    cursor: pointer;
+}
+
+
+/* Mudança de aparência quando o mouse passa pelo botão */
+button:hover {
+    background-color: #176b3a;
+    color: white;
+}
+
+
+/* IMPORTANTE PARA ACESSIBILIDADE:
+   mostra visualmente onde o usuário está quando
+   navega usando o teclado */
+button:focus,
+article:focus {
+    outline: 4px solid #ffbf00;
+    outline-offset: 3px;
+}
+
+
+/* =====================================================
+   CONTEÚDO PRINCIPAL
+   ===================================================== */
+
+main {
+    /* Largura máxima do conteúdo */
+    max-width: 1200px;
+
+    /* Centraliza o conteúdo */
+    margin: 0 auto;
+
+    /* Espaçamento interno */
+    padding: 30px 20px;
+}
+
+
+/* Título da seção */
+.destaques h2 {
+    text-align: center;
+
+    color: #176b3a;
+}
+
+
+/* Texto introdutório */
+.destaques > p {
+    text-align: center;
+}
+
+
+/* =====================================================
+   CARTÕES
+   ===================================================== */
+
+/* Container dos cartões */
+.cartoes {
+
+    /* Ativa o Flexbox */
+    display: flex;
+
+    /* Permite que os cartões passem para outra linha */
+    flex-wrap: wrap;
+
+    /* Espaço entre os cartões */
+    gap: 20px;
+
+    /* Centraliza os cartões */
+    justify-content: center;
+}
+
+
+/* Cada cartão */
+.cartao {
+
+    /* Permite que os cartões cresçam */
+    flex: 1 1 300px;
+
+    /* Cor de fundo */
+    background-color: white;
+
+    /* Espaçamento interno */
+    padding: 25px;
+
+    /* Arredonda os cantos */
+    border-radius: 10px;
+
+    /* Borda lateral para facilitar a identificação */
+    border-left: 6px solid #176b3a;
+
+    /* Sombra suave */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+
+/* Título de cada cartão */
+.cartao h3 {
+    color: #176b3a;
+
+    margin-top: 0;
+}
+
+
+/* Destaca a palavra "Mito" e "Verdade" */
+.cartao strong {
+    color: #333333;
+}
+
+
+/* Texto da fonte */
+.fonte {
+    font-size: 0.9em;
+
+    color: #555555;
+
+    border-top: 1px solid #dddddd;
+
+    padding-top: 10px;
+}
+
+
+/* =====================================================
+   RODAPÉ
+   ===================================================== */
+
+footer {
+
+    background-color: #176b3a;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+
+    margin-top: 20px;
+}
+
+
+/* =====================================================
+   ALTO CONTRASTE
+   ===================================================== */
+
+/* Esta classe será adicionada pelo JavaScript
+   quando o usuário clicar no botão de contraste */
+.alto-contraste {
+
+    background-color: #000000;
+
+    color: #ffffff;
+}
+
+
+/* Quando o alto contraste estiver ativado,
+   os cartões e a área de acessibilidade também mudam */
+.alto-contraste .cartao,
+.alto-contraste .acessibilidade {
+
+    background-color: #000000;
+
+    color: #ffffff;
+
+    border-color: #ffffff;
+}
+
+
+/* Títulos no modo de alto contraste */
+.alto-contraste h1,
+.alto-contraste h2,
+.alto-contraste h3 {
+
+    color: #ffff00;
+}
+
+
+/* Botões no alto contraste */
+.alto-contraste button {
+
+    background-color: #000000;
+
+    color: #ffffff;
+
+    border-color: #ffffff;
+}
+
+
+/* =====================================================
+   RESPONSIVIDADE
+   ===================================================== */
+
+/* Estas regras são aplicadas em telas menores */
+@media (max-width: 600px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    main {
+        padding: 20px 15px;
+    }
+
+    .cartao {
+        flex-basis: 100%;
+    }
+
+    button {
+        width: 100%;
+    }
+}

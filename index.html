@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <!-- Define a codificação de caracteres para aceitar acentos e caracteres especiais -->
+    <meta charset="UTF-8">
+
+    <!-- Faz o site se adaptar a celulares, tablets e computadores -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Nome que aparece na aba do navegador -->
+    <title>Destaques - Mitos e Verdades</title>
+
+    <!-- Conecta o arquivo HTML ao arquivo de estilos CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <!-- Cabeçalho principal da página -->
+    <header>
+        <!-- h1 é o título mais importante da página -->
+        <h1>Verificação de Fatos</h1>
+
+        <!-- p apresenta uma pequena explicação sobre a página -->
+        <p>
+            Descubra alguns mitos e verdades sobre alimentação saudável
+            e saúde mental.
+        </p>
+    </header>
+
+
+    <!-- Área destinada aos recursos de acessibilidade -->
+    <section class="acessibilidade" aria-labelledby="titulo-acessibilidade">
+
+        <!-- h2 cria o título dessa área -->
+        <h2 id="titulo-acessibilidade">Acessibilidade</h2>
+
+        <!-- Grupo de botões para controlar a visualização e leitura -->
+        <div class="botoes-acessibilidade">
+
+            <!-- Botão para aumentar o tamanho da fonte -->
+            <button id="aumentar-fonte" type="button">
+                Aumentar fonte
+            </button>
+
+            <!-- Botão para diminuir o tamanho da fonte -->
+            <button id="diminuir-fonte" type="button">
+                Diminuir fonte
+            </button>
+
+            <!-- Botão para ativar/desativar o alto contraste -->
+            <button id="contraste" type="button">
+                Alto contraste
+            </button>
+
+            <!-- Botão para fazer o navegador ler o conteúdo -->
+            <button id="ler-pagina" type="button">
+                🔊 Ler página
+            </button>
+
+            <!-- Botão para interromper a leitura -->
+            <button id="parar-leitura" type="button">
+                ⏹ Parar leitura
+            </button>
+
+        </div>
+    </section>
+
+
+    <!-- Conteúdo principal da página -->
+    <main>
+
+        <!-- Seção que apresenta os destaques -->
+        <section class="destaques" aria-labelledby="titulo-destaques">
+
+            <!-- Título da seção -->
+            <h2 id="titulo-destaques">Destaques</h2>
+
+            <!-- Texto introdutório -->
+            <p>
+                Antes de compartilhar uma informação, procure verificar
+                se ela é verdadeira.
+            </p>
+
+
+            <!-- Container que organizará os cartões usando Flexbox -->
+            <div class="cartoes">
+
+
+                <!-- PRIMEIRO CARTÃO -->
+                <article class="cartao">
+
+                    <!-- Título do primeiro destaque -->
+                    <h3>🥗 Alimentação saudável</h3>
+
+                    <!-- Apresenta o mito -->
+                    <p>
+                        <strong>Mito:</strong>
+                        Para ter uma alimentação saudável, é preciso eliminar
+                        completamente os carboidratos.
+                    </p>
+
+                    <!-- Apresenta a informação correta -->
+                    <p>
+                        <strong>Verdade:</strong>
+                        Carboidratos podem fazer parte de uma alimentação
+                        equilibrada. A quantidade e o tipo de alimento
+                        são importantes.
+                    </p>
+
+                    <!-- Fonte indica onde o estudante pode pesquisar mais -->
+                    <p class="fonte">
+                        Fonte: Guia Alimentar para a População Brasileira.
+                    </p>
+
+                </article>
+
+
+                <!-- SEGUNDO CARTÃO -->
+                <article class="cartao">
+
+                    <!-- Título do segundo destaque -->
+                    <h3>🍎 Alimentação e saúde</h3>
+
+                    <!-- Apresenta o mito -->
+                    <p>
+                        <strong>Mito:</strong>
+                        Todo alimento considerado "natural" é automaticamente
+                        saudável.
+                    </p>
+
+                    <!-- Apresenta a informação correta -->
+                    <p>
+                        <strong>Verdade:</strong>
+                        A palavra "natural" sozinha não determina se um
+                        alimento faz parte de uma alimentação equilibrada.
+                        É importante observar o conjunto da alimentação.
+                    </p>
+
+                    <!-- Fonte da informação -->
+                    <p class="fonte">
+                        Fonte: Ministério da Saúde.
+                    </p>
+
+                </article>
+
+
+                <!-- TERCEIRO CARTÃO -->
+                <article class="cartao">
+
+                    <!-- Título do terceiro destaque -->
+                    <h3>🧠 Saúde mental</h3>
+
+                    <!-- Apresenta o mito -->
+                    <p>
+                        <strong>Mito:</strong>
+                        Pessoas que enfrentam problemas de saúde mental
+                        simplesmente precisam "pensar positivo".
+                    </p>
+
+                    <!-- Apresenta a informação correta -->
+                    <p>
+                        <strong>Verdade:</strong>
+                        Saúde mental envolve diversos fatores. Buscar apoio,
+                        conversar com pessoas de confiança e procurar
+                        profissionais quando necessário pode ser importante.
+                    </p>
+
+                    <!-- Fonte da informação -->
+                    <p class="fonte">
+                        Fonte: Organização Mundial da Saúde (OMS).
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Rodapé da página -->
+    <footer>
+
+        <!-- Informação sobre o objetivo educacional do projeto -->
+        <p>
+            Projeto educativo sobre inclusão digital e verificação de fatos.
+        </p>
+
+    </footer>
+
+
+    <!-- Conecta o HTML ao arquivo JavaScript -->
+    <script src="javascript.js"></script>
+
+</body>
+
+</html>
